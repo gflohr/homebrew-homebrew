@@ -12,6 +12,15 @@ to be searched like this:
 $ brew tap gflohr/homebrew
 ```
 
+## Uninstall
+
+If you are too lazy researching how to get rid of a tap, here you are for
+this particular tap:
+
+```sh
+$ brew untap gflohr/homebrew
+```
+
 ## Available Formulae
 
 ### Qgoda
