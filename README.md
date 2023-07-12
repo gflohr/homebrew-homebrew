@@ -1,7 +1,7 @@
 # My Homebrew Formulae
 
 This is a tap for [homebrew](https://brew.sh) with formulae for software that
-I have written or like.
+I have written, like, or need.
 
 ## Installation
 
@@ -21,6 +21,14 @@ this particular tap:
 $ brew untap gflohr/homebrew
 ```
 
+## Available for Adoption?
+
+Sure! All formulae are.  If you want to transfer a formula into the official
+[homebrew-core](https://github.com/Homebrew/homebrew-core) tap, go ahead and
+do so.  If you are nice, you will
+[file an issue here](https://github.com/gflohr/homebrew-homebrew/issues/new/choose),
+so that I can remove the formula from this repository.
+
 ## Available Formulae
 
 ### Qgoda
@@ -38,4 +46,3 @@ $ brew install qgoda
 Yes, "homebrew-homebrew" is a little wonky as a name.  But I wanted people
 to be able use it as `brew tap gflohr/homebrew` and that is what it has to
 be named for this purpose.
-
