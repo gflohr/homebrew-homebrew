@@ -1,8 +1,8 @@
 class Qgoda < Formula
 	desc "Static site generator with built-in multi-language support"
 	homepage "https://www.qgoda.net"
-	url "file:///Users/guidoflohr/perl/qgoda/Qgoda-v0.10.0.tar.gz"
-	sha256 "6a6d896a5e1672a7981503a469b032b9ed5b31ef7ee8be26f564b0e570635483"
+	url "https://github.com/gflohr/qgoda/releases/download/v0.10.0/Qgoda-v0.10.0.tar.gz"
+	sha256 "0de739d6e1c2b1066cb166e2a9db092aa78cc3d3a7205e91696f154256b2ff94"
 	license "GPL-3.0-or-later"
 
 	depends_on "cpanminus" => :build
