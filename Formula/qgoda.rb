@@ -4,6 +4,7 @@ class Qgoda < Formula
 	url "https://github.com/gflohr/qgoda/releases/download/v0.10.0/Qgoda-v0.10.0.tar.gz"
 	sha256 "0de739d6e1c2b1066cb166e2a9db092aa78cc3d3a7205e91696f154256b2ff94"
 	license "GPL-3.0-or-later"
+	revision 1
 
 	depends_on "cpanminus" => :build
 	depends_on "node" => :build
