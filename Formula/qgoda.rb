@@ -1,7 +1,7 @@
 class Qgoda < Formula
 	desc "Static site generator with built-in multi-language support"
 	homepage "https://www.qgoda.net"
-	url "file:///Users/iknowmyname/perl/qgoda/Qgoda-v0.10.0.tar.gz"
+	url "file:///Users/guidoflohr/perl/qgoda/Qgoda-v0.10.0.tar.gz"
 	sha256 "6a6d896a5e1672a7981503a469b032b9ed5b31ef7ee8be26f564b0e570635483"
 	license "GPL-3.0-or-later"
 
@@ -25,6 +25,13 @@ class Qgoda < Formula
 			system "make", "install"
 		end
 		system "rm", "-rf", "JavaScript-Duktape-XS"
+
+		# And here.
+		system "git", "clone", "https://github.com/gflohr/AnyEvent-Filesys-Watcher.git"
+		chdir "AnyEvent-Filesys-Watcher" do
+			system "cpanm", "--local-lib", "#{libexec}", "--notest", "--installdeps", "."
+		end
+		system "rm", "-rf", "AnyEvent-Filesys-Watcher"
 
 		ENV["QGODA_PACKAGE_MANAGER"] = Formula["npm"].libexec/"bin/npm"
 		system "cpanm", "--local-lib", "#{libexec}", "--notest", "--installdeps", "."
