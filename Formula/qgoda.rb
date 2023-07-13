@@ -14,21 +14,6 @@ class Qgoda < Formula
 		ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
 		ENV.prepend_path "PERL5LIB", libexec/"lib"
 
-		# Until Mac-FSEvents is released again.
-		on_macos do
-			system "git", "clone", "https://github.com/skaji/Mac-FSEvents"
-			chdir "Mac-FSEvents" do
-				system "git", "reset", "--hard", "4215be367e2dedcc55aa5fc413dc0291ab697604"
-				system "perl", "Makefile.PL",
-					"INSTALL_BASE=#{libexec}",
-					"INSTALLSITEMAN1DIR=#{man1}",
-					"INSTALLSITEMAN3DIR=#{man3}"
-				system "make"
-				system "make", "install"
-			end
-			system "rm", "-rf", "Mac-FSEvents"
-		end
-
 		# The HEAD of the main branch contains is okay here.
 		system "git", "clone", "https://github.com/gflohr/JavaScript-Duktape-XS.git"
 		chdir "JavaScript-Duktape-XS" do
