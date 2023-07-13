@@ -29,7 +29,7 @@ class Qgoda < Formula
 		# And here.
 		system "git", "clone", "https://github.com/gflohr/AnyEvent-Filesys-Watcher.git"
 		chdir "AnyEvent-Filesys-Watcher" do
-			system "cpanm", "--local-lib", "#{libexec}", "--notest", "--installdeps", "."
+			system "cpanm", "--local-lib", "#{libexec}", "--notest", "."
 		end
 		system "rm", "-rf", "AnyEvent-Filesys-Watcher"
 
