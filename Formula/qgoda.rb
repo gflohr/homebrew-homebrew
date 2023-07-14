@@ -4,14 +4,13 @@ class Qgoda < Formula
   url "https://github.com/gflohr/qgoda/archive/refs/tags/v0.10.1.tar.gz"
   sha256 "aa965da037f1f6be1708204de7d8fa2e22aa124cc7668dae4bce6d13314efea1"
   license "GPL-3.0-or-later"
-  revision 2
+  revision 3
 
   depends_on "cpanminus" => :build
   depends_on "node" => :build
   depends_on "perl"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
     ENV.prepend_path "PERL5LIB", libexec/"lib"
 
