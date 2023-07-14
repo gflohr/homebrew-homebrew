@@ -1,8 +1,8 @@
 class Qgoda < Formula
 	desc "Static site generator with built-in multi-language support"
 	homepage "https://www.qgoda.net"
-	url "https://github.com/gflohr/qgoda/releases/download/v0.10.0/Qgoda-v0.10.0.tar.gz"
-	sha256 "0de739d6e1c2b1066cb166e2a9db092aa78cc3d3a7205e91696f154256b2ff94"
+	url "https://github.com/gflohr/qgoda/archive/refs/tags/v0.10.1.tar.gz"
+	sha256 "aa965da037f1f6be1708204de7d8fa2e22aa124cc7668dae4bce6d13314efea1"
 	license "GPL-3.0-or-later"
 	revision 2
 
